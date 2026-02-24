@@ -1,39 +1,34 @@
-import './index.css'
-import logo from './assets/robot.png'
-
+import { Routes, Route } from "react-router-dom"
+import Sidebar from "./components/sidebar"
+import Navbar from "./components/navbar"
+import Home from "./components/home"
+import Profile from "./pages/profile"
+import Desa from "./pages/desa"
+import Logbook from "./pages/logbook"
 
 function App() {
- 
   return (
-   
+    <div className="h-screen flex overflow-hidden">
 
-<div className='h-screen flex items-center justify-center'>
+      <Sidebar />
 
-<div className='flex  items-center '>
+      <div className="flex-1 flex flex-col">
 
-        <img src={logo} className="w-60 h-65  gap-10" />
-    <div className="flex flex-col justify-center h-screen items-start">
-    <h1 className="text-blue-500 font-semibold text-6xl">Selamat Datang!</h1>
-    <p className="text-blue-500">SIM KKN Universitas Duta Bangsa</p>
+        <Navbar />
+
+        <div className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/desa" element={<Desa />} />
+            <Route path="/logbook" element={<Logbook />} />
+           
+          </Routes>
+        </div>
+
+      </div>
+
     </div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
   )
 }
 

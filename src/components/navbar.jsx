@@ -10,7 +10,7 @@ function Navbar() {
 
       
         <img
-        src="https://ui-avatars.com/api/?name=Satriyo"
+        src="https://ui-avatars.com/api/?name=Mazanov&background=0D8ABC&color=fff"
         alt="Profile"
         className="w-10 h-10 rounded-full "
         />
