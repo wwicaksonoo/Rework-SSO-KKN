@@ -22,7 +22,7 @@ function Sidebar() {
                 </div>
 
                 <nav className="flex flex-col gap-2">
-                    <SidebarItem collapsed={collapsed} icon={<LayoutDashboard size={22} />} text="Dashboard" active />
+                    <SidebarItem collapsed={collapsed} icon={<LayoutDashboard size={22} />} text="Dashboard" active to="/" />
                     <SidebarItem collapsed={collapsed} icon={<User size={22} />} text="Profile" to="/profile" />
                     <SidebarItem collapsed={collapsed} icon={<Home size={22} />} text="Desa" to="/desa" />
                     <SidebarItem collapsed={collapsed} icon={<Users size={22} />} text="Kelompok" to="/kelompok" />
